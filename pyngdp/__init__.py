@@ -1,1 +1,1 @@
-from .base import NGDP
+from .base import NGDP  # noqa: F401
