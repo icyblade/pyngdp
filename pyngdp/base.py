@@ -21,7 +21,7 @@ class NGDP(object):
         self.logger.info(f'Using program code: {program_code}.')
         self.cdn = cdn
         self.logger.info(f'Using CDN: {cdn}.')
-        self.host = 'http://us.patch.battle.net:1119'
+        self.host = f'http://{cdn}.patch.battle.net:1119'
         self.session = Session()
 
     @property
