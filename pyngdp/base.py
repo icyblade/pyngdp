@@ -12,7 +12,7 @@ class NGDP(object):
     def __init__(self, program_code, cdn='us'):
         self.logger = build_logger()
 
-        if program_code not in ['wow', 'wow_beta', 'wowt']:
+        if program_code not in ['wow', 'wow_alpha', 'wow_beta', 'wowt']:
             raise NotImplementedError(f'Program code {program_code} is not implemented yet.')
         if cdn not in ['us', 'cn']:
             raise ValueError(f'Invalid CDN {cdn}')
