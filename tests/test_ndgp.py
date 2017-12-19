@@ -18,7 +18,7 @@ def test_cdns():
 
     ngdp = NGDP('wow')
     assert isinstance(ngdp.cdns, dict)
-    assert set(ngdp.cdns.keys()) == {'Name', 'Path', 'Hosts', 'ConfigPath'}
+    assert set(ngdp.cdns.keys()) == {'Name', 'Path', 'Hosts', 'ConfigPath', 'Servers'}
 
 
 def test_versions():
