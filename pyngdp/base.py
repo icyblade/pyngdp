@@ -14,7 +14,7 @@ class NGDP(object):
 
         if program_code not in ['wow', 'wowdev', 'wow_beta', 'wowt']:
             raise NotImplementedError(f'Program code {program_code} is not implemented yet.')
-        if cdn not in ['us', 'cn']:
+        if cdn not in ['us', 'cn', 'kr']:
             raise ValueError(f'Invalid CDN {cdn}')
 
         self.program_code = program_code
